@@ -1,0 +1,866 @@
+/*-----------background-----------*/
+.root {
+    -fx-background-color: #F0F1F4;
+}
+
+.white-bg {
+    -fx-background-color: #fff;
+}
+
+/*bg-round*/
+.white-panel-no-border {
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+}
+
+/*bg-round-border*/
+.panel {
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+    -fx-border-width: .5px;
+    -fx-border-color: #D3D4D4;
+    -fx-border-radius: 8px;
+    -fx-text-fill: #000;
+}
+
+.medium-green-bg {
+    -fx-background-color: #50A69B;
+}
+
+.component-bg {
+    -fx-background-color: transparent;
+    -fx-background-radius: 8px;
+}
+
+.transparent-bg {
+    -fx-background-color: transparent;
+}
+
+.overlay-bg {
+    -fx-background-color: rgba(0, 0, 0, 0.2); /* Black with 20% opacity */
+}
+
+/*-----------text-----------*/
+.box-name {
+    -fx-text-fill: #AF6A49;
+    -fx-font-weight: bold;
+}
+
+.black-box-name {
+    -fx-text-fill: #2F3237;
+    -fx-font-weight: bold;
+}
+
+
+.big-head-name {
+    -fx-text-fill: #AF6A49;
+    -fx-font-weight: bold;
+}
+
+
+
+.gray-small-text {
+    -fx-text-fill: #A4A5A6;
+}
+
+.amount {
+    -fx-background-color: #D9E1E8;   /* White background */
+    -fx-text-fill: #6B6B6C;          /* Dark grey text */
+    -fx-background-radius: 15px;     /* Rounded corners */
+    -fx-font-weight: bold;
+}
+
+.error-text {
+    -fx-text-fill: #FF0000;
+
+}
+
+.status-text {
+    -fx-text-fill: #fff;
+    -fx-font-wieght: bold;
+    -fx-alignment: center;
+
+}
+
+.default-text{
+    -fx-text-fill: #242427;
+}
+
+/*-----------menu-----------*/
+.nav-form {
+    -fx-background-color: #2F3237;
+}
+
+.nav-head {
+    -fx-background-color: transparent;
+    -fx-text-fill: #DEDEDF;
+}
+
+.nav-icon {
+    -fx-fill: #A4A5A6;
+}
+
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+    -fx-font-family: "Arial"; /*check*/
+    -fx-text-fill:#A4A5A6;
+    -fx-alignment:CENTER-LEFT;
+    -fx-graphic-text-gap: 10px;
+    -fx-padding: 0px 0px 0px 20px;
+
+}
+
+.nav-btn:hover {
+    -fx-background-color: #AF6A49;
+    -fx-background-radius: 0px;
+    -fx-text-fill:#fff;
+    -fx-fill: #fff;
+}
+
+.nav-btn:hover .nav-icon {
+    -fx-fill: #fff;
+}
+
+.nav-btn:pressed {
+    -fx-background-color: #965A3F;
+    -fx-text-fill: #fff;
+}
+
+.nav-btn:pressed .nav-icon{
+    -fx-fill: #fff;
+}
+
+.nav-btn:selected {
+    -fx-text-fill: #fff;
+}
+
+.nav-btn:selected .nav-icon {
+    -fx-fill: #fff;
+}
+
+
+.sub-nav-btn {
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+    -fx-font-family: "Arial";  /*check*/
+    -fx-text-fill:#A4A5A6;
+    -fx-alignment:CENTER-LEFT;
+    -fx-graphic-text-gap: 10px;
+    -fx-padding: 0px 0px 0px 35px;
+
+}
+
+.sub-nav-btn:hover {
+    -fx-background-color: #AF6A49;
+    -fx-background-radius: 0px;
+    -fx-text-fill:#fff;
+    -fx-fill: #fff;
+    /*-fx-background-radius: 10px;*/
+}
+
+
+.sub-nav-btn:hover .nav-icon {
+    -fx-fill: #fff;
+}
+
+.sub-nav-btn:pressed {
+    -fx-background-color: #965A3F;
+    -fx-text-fill: #fff;
+}
+
+.sub-nav-btn:pressed .nav-icon{
+    -fx-fill: #fff;
+}
+
+.sub-nav-btn:selected {
+    -fx-background-color: #AF6A49;
+}
+
+
+.nav-profile {
+    -fx-background-color: #C97954;
+    -fx-cursor:hand;
+    -fx-font-family: "Arial";
+    -fx-text-fill:#fff;
+    -fx-alignment:CENTER-LEFT;
+    -fx-graphic-text-gap: 10px;
+
+}
+.nav-profile:hover {
+    -fx-background-color: #AF6A49;
+}
+
+.nav-profile:pressed {
+    -fx-background-color: #965A3F;
+}
+
+.logout-area {
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0px 0px 0px 10px;
+    -fx-cursor: hand;
+
+}
+
+.logout-btn{
+    /*-fx-background-color: #C97954;*/
+    -fx-background-color: #C97954;
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+}
+
+.logout-btn:hover{
+    -fx-background-color: #AF6A49;
+}
+
+.logout-btn:pressed {
+    -fx-background-color: #965A3F;
+}
+
+.logout-icon {
+    -fx-font-size: 1px;
+}
+
+
+/* check-delete */
+/* Default style for ToggleButton */
+.theme-btn {
+    -fx-background-color: #2F3237; /* Dark grey background */
+    -fx-text-fill: #A4A5A6;        /* Grey text */
+    -fx-border-color: #4A4A4A;     /* Darker border */
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;/* Rounded corners */
+    -fx-padding: 10px 20px;        /* Padding inside button */
+    -fx-cursor: hand;              /* Cursor changes to hand */
+    -fx-alignment: CENTER_LEFT;    /* Align content to the left */
+    -fx-graphic-text-gap: 10px;    /* Gap between icon and text */
+}
+
+/* Hover state */
+.theme-btn:hover {
+    -fx-background-color: #3F4B4F; /* Slightly lighter background on hover */
+    -fx-text-fill: #FFFFFF;        /* Change text color to white on hover */
+}
+
+/* Pressed state */
+.theme-btn:pressed {
+    -fx-background-color: #4A5B5F; /* Even lighter background when pressed */
+    -fx-text-fill: #FFFFFF;        /* White text */
+}
+
+/* Selected (Toggled) state */
+.theme-btn:selected {
+    -fx-background-color: #AF6A49; /* Greenish background when selected */
+    -fx-text-fill: white;          /* White text */
+    -fx-border-color: #55897C;     /* Change border color when selected */
+}
+
+/* Selected and hovered state */
+.theme-btn:selected:hover {
+    -fx-background-color: #5B918A; /* Darker greenish background when selected and hovered */
+    -fx-text-fill: white;          /* White text */
+}
+
+/* Selected and pressed state */
+.theme-btn:selected:pressed {
+    -fx-background-color: #4F7D74; /* Darker greenish when selected and pressed */
+}
+
+
+/*-----------button-----------*/
+
+/*darker-mint*/
+.mint-btn {
+    -fx-background-color: #50A69B;   /* Green background */
+    -fx-text-fill: #FFFFFF;          /* White text */
+    -fx-background-radius: 10px;     /* Rounded corners */
+    /*-fx-padding: 10px 20px;          !* Padding inside button *!*/
+    -fx-cursor: hand;                /* Hand cursor on hover */
+    /*-fx-font-weight: bold;*/
+
+}
+
+.mint-btn:hover {
+    -fx-background-color: #48a494;    /* Slightly darker green on hover */
+}
+
+.mint-btn:pressed {
+    -fx-background-color: #469089;    /* Even darker green when pressed */
+    -fx-effect: none;                 /* Remove shadow effect when pressed */
+}
+
+/*lighter-mint*/
+.green-positive-btn {
+    -fx-background-color: #46CFA3;   /* Green background */
+    -fx-text-fill: #FFFFFF;          /* White text */
+    -fx-background-radius: 10px;     /* Rounded corners */
+    -fx-cursor: hand;                /* Hand cursor on hover */
+
+}
+
+/* Hover effect for Green Positive Button */
+.green-positive-btn:hover {
+    -fx-background-color: #46CFA3;   /* Darker green on hover */
+}
+
+/* Pressed effect for Green Positive Button */
+.green-positive-btn:pressed {
+    -fx-background-color: #3DB58F;   /* Even darker green when pressed */
+}
+
+
+.red-negative-btn {
+    -fx-background-color: #F26865;   /* Green background */
+    -fx-text-fill: #FFFFFF;          /* White text */
+    -fx-background-radius: 10px;     /* Rounded corners */
+    -fx-cursor: hand;                /* Hand cursor on hover */
+
+}
+
+/* Hover effect for Green Positive Button */
+.red-negative-btn:hover {
+    -fx-background-color: #E56260;   /* Darker green on hover */
+}
+
+/* Pressed effect for Green Positive Button */
+.red-negative-btn:pressed {
+    -fx-background-color: #B24C4A;   /* Even darker green when pressed */
+}
+
+
+/* gray Button */
+.gray-btn {
+    -fx-background-color: #D9E1E8;   /* White background */
+    -fx-text-fill: #6B6B6C;          /* Dark grey text */
+    -fx-background-radius: 5px;     /* Rounded corners */
+    -fx-cursor: hand;                /* Hand cursor on hover */
+
+}
+
+/* Hover effect for White Button */
+.gray-btn:hover {
+    -fx-background-color: #CDD5DB;   /* Light grey background on hover */
+    /*-fx-border-color: #AAAAAA;       !* Darker border on hover *!*/
+}
+
+/* Pressed effect for White Button */
+.gray-btn:pressed {
+    -fx-background-color: #C4CBD1;   /* Even darker grey when pressed */
+    /*-fx-border-color: #E3E5E8;       !* Darker border when pressed *!*/
+}
+
+/* White Button */
+.white-btn {
+    -fx-background-color: #fff;   /* White background */
+    -fx-text-fill: #6B6B6C;          /* Dark grey text */
+    -fx-background-radius: 5px;     /* Rounded corners */
+    -fx-border-color: #D3D4D4;       /* Light grey border */
+    -fx-border-radius: 5px;
+    -fx-cursor: hand; /* Hand cursor on hover */
+
+}
+
+/* Hover effect for White Button */
+.white-btn:hover {
+    -fx-background-color: #fff;   /* Light grey background on hover */
+    -fx-border-color: #AAAAAA;       /* Darker border on hover */
+}
+
+/* Pressed effect for White Button */
+.white-btn:pressed {
+    -fx-background-color: #fff;   /* Even darker grey when pressed */
+    -fx-border-color: #E3E5E8;       /* Darker border when pressed */
+}
+
+.btn-bar {
+    -fx-background-color: #fff;
+    -fx-background-radius: 0px;
+    -fx-border-color: #D3D4D4;       /* Light grey border */
+    -fx-border-radius: 0px;          /* Rounded corners */     /* Padding inside the TextField */
+    -fx-font-family: "System";        /* check */
+    -fx-text-fill: #6B6B6C;
+    -fx-alignment: CENTER;
+    -fx-cursor: hand;
+    -fx-graphic-text-gap: 10px;
+
+}
+
+.btn-bar:hover {
+    -fx-border-radius: 0px;
+    -fx-background-color: #F7F7F7;
+}
+
+.btn-bar:pressed {
+    -fx-border-radius: 0px;
+    -fx-background-color: #F2F2F2;
+}
+
+
+.btn-bar-icon {
+    -fx-fill: #a8a8a8;
+}
+
+/*close-btn*/
+.transparent-btn {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+
+}
+
+
+.round-white-button {
+    -fx-background-color: #D9E1E8;   /* White background */
+    -fx-text-fill: #6B6B6C;          /* Dark grey text */
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;                /* Hand cursor on hover */
+
+}
+
+/* Hover effect for White Button */
+.round-white-button:hover {
+    -fx-background-color: #CDD5DB;   /* Light grey background on hover */
+}
+
+/* Pressed effect for White Button */
+.round-white-button:pressed {
+    -fx-background-color: #C4CBD1;   /* Even darker grey when pressed */
+}
+
+
+.small-round-gray-button {
+    -fx-background-color: #D9E1E8;   /* White background */
+    -fx-text-fill: #6B6B6C;          /* Dark grey text */
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;                /* Hand cursor on hover */
+
+}
+
+/* Hover effect for White Button */
+.small-round-gray-button:hover {
+    -fx-background-color: #CDD5DB;   /* Light grey background on hover */
+}
+
+/* Pressed effect for White Button */
+.small-round-gray-button:pressed {
+    -fx-background-color: #C4CBD1;
+}
+
+.small-round-gray-button .close-icon{
+    -fx-fill: #A4A5A6;
+}
+
+.small-round-gray-button:hover .close-icon{
+    -fx-fill: #838485;
+}
+
+.small-round-gray-button:pressed .close-icon{
+    -fx-fill: #6A6A6B;
+}
+
+/*-----------choice box-----------*/
+.choice-box {
+    -fx-background-color: #FFFFFF;  /* White background */
+    -fx-border-color: #D3D4D4;      /* Light grey border */
+    -fx-border-radius: 5px;         /* Rounded corners */
+    -fx-padding: 5px 10px;          /* Padding inside the ChoiceBox */
+    -fx-font-family: "Arial";       /* check */
+    -fx-text-fill: #333333;         /* Dark grey text */
+
+}
+
+/* When ChoiceBox is hovered */
+.choice-box:hover {
+    -fx-border-color: #AAAAAA;      /* Darker border on hover */
+}
+
+/* When ChoiceBox is focused (user clicked inside) */
+.choice-box:focused {
+    -fx-border-color: #888888;      /* Darker border when focused */
+}
+
+/* Dropdown list item */
+.choice-box .list-cell {
+    -fx-background-color: #FFFFFF;  /* White background for dropdown items */
+    -fx-text-fill: #333333;         /* Dark grey text */
+    -fx-padding: 5px 10px;          /* Padding for dropdown items */
+
+}
+
+/* Hover effect for items in the dropdown */
+.choice-box .list-cell:hover {
+    -fx-background-color: #E0E0E0;  /* Light grey background when hovered */
+    -fx-text-fill: #000000;         /* Black text when hovered */
+}
+
+/* Styling for the selected item in the dropdown */
+.choice-box .list-cell:selected {
+    -fx-background-color: #6B6B6C;  /* Greenish background for selected item */
+    -fx-text-fill: #FFFFFF;         /* White text for selected item */
+}
+
+/* Arrow button styling */
+.choice-box .arrow {
+    -fx-background-color: #CCCCCC;  /* Light grey background for arrow button */
+    -fx-padding: 3px;               /* Padding for the arrow button */
+}
+
+/* Arrow button when hovered */
+.choice-box:hover .arrow {
+    -fx-background-color: #AAAAAA;  /* Darker grey background for arrow on hover */
+}
+
+
+/*-----------text field-----------*/
+.text-field {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #D3D4D4;       /* Light grey border */
+    -fx-border-radius: 5px;          /* Rounded corners */
+    -fx-padding: 5px 10px;           /* Padding inside the TextField */
+    -fx-font-family: "System";        /* Font family */
+    -fx-text-fill: #333333;          /* Dark grey text */
+
+}
+
+/* TextField when hovered */
+.text-field:hover {
+    /*-fx-background-color: #DADDE7;   !* Light grey background on hover *!*/
+    -fx-border-color: #AAAAAA;       /* Darker border on hover */
+}
+
+/* TextField when focused (clicked or active) */
+.text-field:focused {
+    -fx-background-color: #FFFFFF;   /* Keep white background when focused */
+    -fx-border-color: #888888;       /* Greenish border when focused */
+    -fx-text-fill: #000000;          /* Black text when focused */
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+/* TextField when disabled */
+.text-field:disabled {
+    -fx-background-color: #F3F3F3;   /* Light grey background when disabled */
+    -fx-border-color: #D3D3D3;       /* Grey border when disabled */
+    -fx-text-fill: #AAAAAA;          /* Grey text when disabled */
+}
+
+/* TextField with invalid input (custom class for validation) */
+.text-field.invalid {
+    -fx-border-color: #FF0000;       /* Red border for invalid input */
+    -fx-background-color: #FFE6E6;   /* Light red background for invalid input */
+}
+
+/* Placeholder (Prompt Text) styling */
+.text-field:focused .text-field .prompt-text,
+.text-field .prompt-text {
+    -fx-text-fill: #888888;          /* Light grey for placeholder text */
+}
+
+/* TextField with custom rounded corners */
+.text-field.rounded {
+    -fx-border-radius: 5px;         /* More rounded corners */
+    -fx-background-radius: 5px;
+}
+
+
+
+/*-----------search bar-----------*/
+.search-icon {
+    -fx-fill: #A4A5A6;
+}
+
+.search-bar {
+    -fx-background-color: #fff;
+    -fx-background-radius: 0px;
+    -fx-border-color: #D3D4D4;       /* Light grey border */
+    -fx-border-radius: 0px;          /* Rounded corners */
+    -fx-padding: 0px 0px 0px 50px;           /* Padding inside the TextField */
+    -fx-font-family: "System";        /* Font family */
+    -fx-text-fill: #6B6B6C;
+    -fx-alignment: CENTER_LEFT;
+
+}
+
+.search-bar:hover {
+    -fx-border-radius: 0px;
+    -fx-border-color: #D3D4D4;
+}
+
+.search-bar:focused {
+    -fx-border-radius: 0px;
+    -fx-border-color: #D3D4D4;
+}
+
+
+/*-----------table view-----------*/
+.table-view {
+    -fx-border-color: #fff;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-padding: 0px
+}
+
+.table-view .column-header {
+    -fx-background-color: #FFCC00;  /* Change this to any color you prefer */
+    -fx-text-fill: #000000;         /* Change the text color (black) */
+    -fx-font-weight: bold;          /* Make the text bold */
+}
+
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #fff;
+}
+
+.table-view .column-header, .filter {
+    -fx-background-color: transparent;
+    -fx-size: 20px;
+}
+
+.table-view .column-header .label {
+    /*-fx-text-fill: #AF6A49;*/
+    -fx-text-fill: #6C6D6E;
+    -fx-font-family: "System";
+    -fx-font-style: normal;
+
+}
+
+
+.table-view .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Styling for the scroll bars */
+.table-view .scroll-bar {
+    -fx-background-color: #fff;      /* Light grey background for scroll bars */
+    -fx-pref-width: 12px;               /* Width of the scroll bars */
+}
+
+/* Scroll bar thumb styling */
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #D3D4D4;      /* Set the color of the scroll bar thumb */
+    -fx-background-radius: 5px;         /* Rounded corners for the thumb */
+}
+
+/* Optional: Hover effect for scroll bar thumb */
+.table-view .scroll-bar .thumb:hover {
+    -fx-background-color: #7A7D80;      /* Darker shade on hover */
+}
+
+
+/*-----------icon-----------*/
+
+.approve-icon {
+    -fx-text-fill: #50A69B;
+}
+
+.close-icon {
+    -fx-fill: #A4A5A6;
+}
+
+.close-icon:hover {
+    -fx-fill: #838485;
+}
+
+.close-icon:pressed {
+    -fx-fill: #6A6A6B;
+}
+
+
+/*-----------status box-----------*/
+
+.status-btn {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+/*-----------combo box-----------*/
+.combo-box {
+    -fx-background-color: #FFFFFF;  /* White background */
+    -fx-border-color: #D3D4D4;     /* Light grey border */
+    -fx-padding: 5px 10px;          /* Padding inside the ComboBox */
+    -fx-font-family: "Arial";       /* Font family */
+    -fx-text-fill: #A61234;
+
+}
+
+/* When ComboBox is hovered */
+.combo-box:hover {
+    -fx-border-color: #D3D4D4;
+    -fx-background-color: #F7F7F7;/* Darker border on hover */
+}
+
+/* When ComboBox is focused (user clicked inside) */
+.combo-box:focused {
+    -fx-border-color: #D3D4D4;      /* Darker border when focused */
+}
+
+/* Dropdown list item */
+.combo-box .list-cell {
+    -fx-padding: 5px 10px;          /* Padding for dropdown items */
+
+}
+
+/* Hover effect for items in the dropdown */
+.combo-box .list-cell:hover {
+    -fx-text-fill: #000000;         /* Black text when hovered */
+}
+
+/* Styling for the selected item in the dropdown */
+.combo-box .list-cell:selected {
+    -fx-text-fill: #6B6B6C;
+}
+
+/* Arrow button styling */
+.combo-box .arrow {
+    -fx-background-color: #CCCCCC;  /* Light grey background for arrow button */
+    -fx-padding: 3px;               /* Padding for the arrow button */
+}
+
+/* Arrow button when hovered */
+.combo-box:hover .arrow {
+    -fx-background-color: #AAAAAA;  /* Darker grey background for arrow on hover */
+}
+
+
+.combo-box .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Styling for the scroll bars */
+.combo-box .scroll-bar {
+    -fx-background-color: #fff;      /* Light grey background for scroll bars */
+    -fx-pref-width: 12px;               /* Width of the scroll bars */
+}
+
+/* Scroll bar thumb styling */
+.combo-box .scroll-bar .thumb {
+    -fx-background-color: #D3D4D4;      /* Set the color of the scroll bar thumb */
+    -fx-background-radius: 5px;         /* Rounded corners for the thumb */
+}
+
+/* Optional: Hover effect for scroll bar thumb */
+.combo-box .scroll-bar .thumb:hover {
+    -fx-background-color: #7A7D80;      /* Darker shade on hover */
+}
+
+
+
+/*-----------grid pane-----------*/
+.grid-pane {
+    /*-fx-background-color: #F0F0F0;    !* Light grey background for the entire grid *!*/
+    -fx-padding: 10px;                /* Padding around the grid */
+    -fx-hgap: 10px;                   /* Horizontal gap between grid cells */
+    -fx-vgap: 10px;                   /* Vertical gap between grid cells */
+    /*-fx-border-color: #D3D4D4;        !* Light grey border around the grid *!*/
+    -fx-border-width: 2px;            /* Border thickness */
+    -fx-border-radius: 5px;           /* Rounded corners for the border */
+}
+
+/* Styling for individual cells inside the GridPane */
+.grid-pane .cell {
+    /*-fx-background-color: #FFFFFF;    !* White background for cells *!*/
+    -fx-padding: 10px;                /* Padding inside each cell */
+    /*-fx-border-color: #AAAAAA;        !* Light grey border around cells *!*/
+    -fx-border-width: 1px;            /* Thin border for cells */
+    -fx-border-radius: 3px;           /* Rounded corners for cells */
+    -fx-text-fill: #333333;           /* Dark grey text */
+
+}
+
+/* Focused cell styling */
+.grid-pane .cell:focused {
+    /*-fx-background-color: #E0E0E0;    !* Slight grey background when a cell is focused *!*/
+    /*-fx-border-color: #888888;        !* Darker border when a cell is focused *!*/
+}
+
+/* Hover effect for cells */
+.grid-pane .cell:hover {
+    /*-fx-background-color: #F7F7F7;    !* Light grey background when hovered *!*/
+    /*-fx-border-color: #BBBBBB;        !* Slightly darker border on hover *!*/
+}
+
+
+/*-----------scroll pane-----------*/
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Styling for the scroll bars */
+.scroll-pane .scroll-bar {
+    -fx-background-color: #fff;      /* Light grey background for scroll bars */
+    -fx-pref-width: 12px;               /* Width of the scroll bars */
+}
+
+/* Scroll bar thumb styling */
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #D3D4D4;      /* Set the color of the scroll bar thumb */
+    -fx-background-radius: 5px;         /* Rounded corners for the thumb */
+}
+
+/* Optional: Hover effect for scroll bar thumb */
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: #7A7D80;      /* Darker shade on hover */
+}
+
+
+/*-----------list view-----------*/
+.list-view {
+    /* General styling for ListView */
+    -fx-background-color: white;      /* Background color */
+    -fx-border-color: #fff;           /* Border color */
+    -fx-focus-color: transparent;     /* Remove focus color */
+    -fx-faint-focus-color: transparent; /* Remove faint focus color */
+    -fx-padding: 0px;                 /* Padding around the ListView */
+}
+
+.list-view .list-cell {
+    /* Styling for each row (cell) inside the ListView */
+    /*-fx-background-color: #FFCC00;    !* Background color of list items *!*/
+    -fx-text-fill: #000000;           /* Text color */
+    -fx-font-weight: bold;            /* Bold text */
+    -fx-font-family: "System";        /* Font family */
+    -fx-alignment: CENTER;            /* Center the text */
+    -fx-padding: 10px;                /* Padding inside each list item */
+    -fx-border-color: #fff;           /* Optional border color between list items */
+    -fx-border-width: 0 0 1px 0;      /* Optional bottom border for separation */
+
+}
+
+.list-view .list-cell:hover {
+    /* Styling for hovering over list cells */
+    -fx-background-color: #C2DAD7;    /* Change background color on hover */
+}
+
+.list-view .list-cell:selected {
+    /* Styling for selected list cells */
+    -fx-background-color: #C0D8D5;    /* Background color for selected item */
+    -fx-text-fill: #000000;           /* Text color for selected item */
+    -fx-font-weight: bold;            /* Keep the bold style */
+}
+
+.list-view:focused .list-cell {
+    -fx-focus-color: transparent;     /* Remove the default focus color */
+    -fx-faint-focus-color: transparent;
+}
+
+
+/*-----------radio button-----------*/
+
+.radio-button {
+    -fx-text-fill:  #000000; /* สีตัวอักษรเป็นสีขาว */
+}
+
+.pie-chart .chart-legend-item {
+    -fx-text-fill: black;  /* คงสีตัวอักษรเป็นสีดำ */
+}
