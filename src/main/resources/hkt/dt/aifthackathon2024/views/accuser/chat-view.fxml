@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../../templateStyle.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../../templateStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hkt.controllers.accuser.ChatViewController">
     <children>
         <AnchorPane maxHeight="600.0" maxWidth="1100.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../templateStyle.css">
             <children>
@@ -47,7 +47,7 @@
                                                                <children>
                                                                   <TextFlow layoutX="82.0" layoutY="-38.0" prefHeight="162.0" prefWidth="662.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
                                                                      <children>
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="คำถาม">
                                                                            <font>
                                                                               <Font size="14.0" />
                                                                            </font>
@@ -67,12 +67,12 @@
                                                    <children>
                                                       <VBox alignment="TOP_RIGHT" prefHeight="179.0" prefWidth="762.0" spacing="5.0">
                                                          <children>
-                                                            <Label style="-fx-font-weight: bold;" text="QA BOT" />
+                                                            <Label fx:id="nameLabel" style="-fx-font-weight: bold;" text="nameLabel" />
                                                             <AnchorPane prefHeight="10000.0" prefWidth="641.0" styleClass="respond-chatBox" stylesheets="@../../templateStyle.css">
                                                                <children>
                                                                   <TextFlow prefHeight="162.0" prefWidth="662.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
                                                                      <children>
-                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="คำตอบ">
                                                                            <font>
                                                                               <Font size="14.0" />
                                                                            </font>
@@ -101,17 +101,17 @@
                                           </VBox>
                                        </content>
                                     </ScrollPane>
-                                    <TextArea layoutX="20.0" layoutY="472.0" prefHeight="121.0" prefWidth="978.0" promptText="พิมพ์ที่นี่" scrollLeft="10.0" styleClass="text-area-chat" text="sdffffffffffffffff&#10;Sdfafasssdf&#10;sdasfs&#10;dfsadf&#10;asfd&#10;as&#10;fdas&#10;df&#10;df&#10;sfd&#10;a&#10;sd&#10;fas&#10;dfa&#10;sfd&#10;as" wrapText="true">
+                                    <TextArea fx:id="answerTextField" layoutX="20.0" layoutY="472.0" prefHeight="121.0" prefWidth="978.0" promptText="พิมพ์ที่นี่" scrollLeft="10.0" styleClass="text-area-chat" wrapText="true">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextArea>
                                     <Button layoutX="1022.6666666666666" layoutY="498.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="26.0" styleClass="transparent-btn" AnchorPane.rightAnchor="38.0">
                                        <graphic>
-                                          <FontAwesomeIcon glyphName="MICROPHONE" size="3em" styleClass="close-icon" text="" />
+                                          <FontAwesomeIcon glyphName="MICROPHONE" onMouseClicked="#onMicrophoneGlyphClick" size="3em" styleClass="close-icon" text="" />
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="1006.6666666666666" layoutY="559.0" mnemonicParsing="false" style="-fx-font-weight: bold;" styleClass="mint-btn" stylesheets="@../../templateStyle.css" text="ส่งข้อความ" AnchorPane.rightAnchor="20.0" />
+                                    <Button layoutX="1006.6666666666666" layoutY="559.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" style="-fx-font-weight: bold;" styleClass="mint-btn" stylesheets="@../../templateStyle.css" text="ส่งข้อความ" AnchorPane.rightAnchor="20.0" />
                                     <AnchorPane layoutX="453.0" layoutY="-67.0" prefHeight="47.0" prefWidth="1100.0" styleClass="head-bar-mint" AnchorPane.bottomAnchor="553.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
                                           <Label fx:id="requestNameLabel" layoutX="476.0" layoutY="11.0" stylesheets="@../../templateStyle.css" text="สอบปากคำออนไลน์" textFill="WHITE">
