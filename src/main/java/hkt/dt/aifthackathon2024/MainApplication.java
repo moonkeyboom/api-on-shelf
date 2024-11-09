@@ -11,7 +11,7 @@ public class MainApplication  extends Application {
     public void start(Stage stage) throws IOException {
         FXRouter.bind(this, stage, "CS211 Project", 1100, 600);
         configRoutes();
-        FXRouter.goTo("login");
+        FXRouter.goTo("accuser-history-taking");
     }
 
     private void configRoutes() {
@@ -19,6 +19,7 @@ public class MainApplication  extends Application {
 
 
 //        FXRouter.when("creator", viewPath + "hello-view.fxml");
+        FXRouter.when("accuser-history-taking", viewPath + "accuser/history-taking.fxml");
 
     }
 
