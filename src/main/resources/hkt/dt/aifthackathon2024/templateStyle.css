@@ -23,6 +23,15 @@
     -fx-text-fill: #000;
 }
 
+.blue-sky-panel {
+    -fx-background-color: #97C0C9;
+    -fx-background-radius: 8px;
+    -fx-border-width: .5px;
+    -fx-border-color: #D3D4D4;
+    -fx-border-radius: 8px;
+    -fx-text-fill: #000;
+}
+
 .medium-green-bg {
     -fx-background-color: #50A69B;
 }
@@ -53,7 +62,7 @@
 
 
 .big-head-name {
-    -fx-text-fill: #AF6A49;
+    -fx-text-fill: #67a59b;
     -fx-font-weight: bold;
 }
 
@@ -863,4 +872,44 @@
 
 .pie-chart .chart-legend-item {
     -fx-text-fill: black;  /* คงสีตัวอักษรเป็นสีดำ */
+}
+
+
+
+/*-----------chat-----------*/
+
+.receive-chatBox {
+    -fx-background-radius: 0 20 20 20;
+    -fx-background-color: #fff;
+}
+.respond-chatBox {
+    -fx-background-radius: 20 0 20 20;
+    -fx-background-color: #fff;
+}
+
+.text-area-chat {
+    -fx-effect: null;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+    -fx-highlight-fill: transparent;
+    -fx-highlight-text-fill: #000000;
+}
+
+.chat-information-text {
+    -fx-font-weight: bold;
+    -fx-text-fill: #E5E5E5;
+}
+
+
+/*.head-bar-mint {*/
+/*    -fx-background-color: #9ADFE5;*/
+/*}*/
+
+
+.head-bar-mint {
+    -fx-background-color: #6B9AAF;
+    /*-fx-background-color: linear-gradient(to right, #97FAE7 0%, #9ADFE5 50%, #97FAE7 100%);*/
 }

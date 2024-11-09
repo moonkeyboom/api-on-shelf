@@ -18,7 +18,7 @@ public class MainApplication  extends Application {
         String viewPath = "hkt/dt/aifthackathon2024/views/";
 
 
-        FXRouter.when("creator", viewPath + "hello-view.fxml");
+//        FXRouter.when("creator", viewPath + "hello-view.fxml");
 
     }
 

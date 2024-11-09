@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../../templateStyle.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.request.CreateRequestController">
+    <children>
+        <AnchorPane maxHeight="600.0" maxWidth="1100.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../templateStyle.css">
+            <children>
+                <BorderPane fx:id="parent" layoutX="219.0" layoutY="200.0" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="885.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="884.6666666666666" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="606.6666666666666" prefWidth="884.6666666666666" styleClass="root" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ScrollPane layoutX="321.3333333333333" layoutY="60.0" prefHeight="380.0" prefWidth="768.0" styleClass="white-bg" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="60.0">
+                                       <content>
+                                          <VBox alignment="TOP_CENTER" prefHeight="2175.0" prefWidth="1052.0" spacing="20.0" styleClass="blue-sky-panel" stylesheets="@../../templateStyle.css">
+                                             <children>
+                                                <HBox layoutX="11.0" layoutY="25.0" prefHeight="167.0" prefWidth="837.0" spacing="15.0">
+                                                   <children>
+                                                      <ImageView fitHeight="56.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../images/bot-circle.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <VBox prefHeight="179.0" prefWidth="697.0" spacing="5.0">
+                                                         <children>
+                                                            <Label style="-fx-font-weight: bold;" text="QA BOT" />
+                                                            <AnchorPane prefHeight="10000.0" prefWidth="641.0" styleClass="receive-chatBox" stylesheets="@../../templateStyle.css">
+                                                               <children>
+                                                                  <TextFlow layoutX="82.0" layoutY="-38.0" prefHeight="162.0" prefWidth="662.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                                                     <children>
+                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                                                           <font>
+                                                                              <Font size="14.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                     </children>
+                                                                  </TextFlow>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="15.0" right="90.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="TOP_RIGHT" layoutX="11.0" layoutY="145.0" prefHeight="63.0" prefWidth="837.0" spacing="15.0">
+                                                   <children>
+                                                      <VBox alignment="TOP_RIGHT" prefHeight="179.0" prefWidth="762.0" spacing="5.0">
+                                                         <children>
+                                                            <Label style="-fx-font-weight: bold;" text="QA BOT" />
+                                                            <AnchorPane prefHeight="10000.0" prefWidth="641.0" styleClass="respond-chatBox" stylesheets="@../../templateStyle.css">
+                                                               <children>
+                                                                  <TextFlow prefHeight="162.0" prefWidth="662.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                                                     <children>
+                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                                                           <font>
+                                                                              <Font size="14.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                     </children>
+                                                                  </TextFlow>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                      <ImageView fitHeight="56.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../images/user-circle.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="90.0" right="15.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Label styleClass="chat-information-text" text="Police entered the chat" />
+                                             </children>
+                                             <padding>
+                                                <Insets top="15.0" />
+                                             </padding>
+                                          </VBox>
+                                       </content>
+                                    </ScrollPane>
+                                    <TextArea layoutX="20.0" layoutY="458.0" prefHeight="121.0" prefWidth="978.0" promptText="พิมพ์ที่นี่" scrollLeft="10.0" styleClass="text-area-chat" text="sdffffffffffffffff&#10;Sdfafasssdf&#10;sdasfs&#10;dfsadf&#10;asfd&#10;as&#10;fdas&#10;df&#10;df&#10;sfd&#10;a&#10;sd&#10;fas&#10;dfa&#10;sfd&#10;as" wrapText="true">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextArea>
+                                    <Button layoutX="1022.6666666666666" layoutY="487.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="26.0" styleClass="transparent-btn" AnchorPane.rightAnchor="38.0">
+                                       <graphic>
+                                          <FontAwesomeIcon glyphName="MICROPHONE" size="3em" styleClass="close-icon" text="" />
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="1008.0" layoutY="548.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" style="-fx-font-weight: bold;" styleClass="mint-btn" stylesheets="@../../templateStyle.css" text="ส่งข้อความ" AnchorPane.rightAnchor="20.0" />
+                                    <AnchorPane layoutX="453.0" layoutY="-67.0" prefHeight="47.0" prefWidth="1100.0" styleClass="head-bar-mint" AnchorPane.bottomAnchor="553.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label fx:id="requestNameLabel" layoutX="476.0" layoutY="11.0" stylesheets="@../../templateStyle.css" text="สอบปากคำออนไลน์" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="loadingPane" layoutX="20.0" layoutY="20.0" prefHeight="606.6666666666666" prefWidth="884.6666666666666" styleClass="overlay-bg" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="345.0" layoutY="109.0" prefHeight="441.0" prefWidth="429.0" styleClass="panel" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="100.0">
+                                 <children>
+                                    <Button layoutX="25.0" layoutY="349.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="645.0" style="-fx-font-weight: bold;" styleClass="mint-btn" text="เสร็จสิ้น" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="132.0" layoutY="44.0" styleClass="big-head-name" text="ท่านกำลังอัดข้อความเสียง">
+                                       <font>
+                                          <Font size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="161.0" layoutY="184.0" prefHeight="122.0" prefWidth="415.0" styleClass="error-text" text="MM:SS นาที">
+                                       <font>
+                                          <Font size="80.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="294.0" layoutY="117.0" styleClass="gray-small-text" text="เวลาคงเหลือ">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="requestFormPane" prefHeight="606.6666666666666" prefWidth="884.6666666666666" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../../templateStyle.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.request.CreateRequestController">
+    <children>
+        <AnchorPane maxHeight="600.0" maxWidth="1100.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../templateStyle.css">
+            <children>
+                <BorderPane fx:id="parent" layoutX="219.0" layoutY="200.0" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <left>
+                        <AnchorPane prefHeight="570.0" prefWidth="215.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <AnchorPane layoutY="-6.0" prefHeight="606.6666666666666" prefWidth="215.33333333333334" styleClass="nav-form" stylesheets="@../../templateStyle.css">
+                                    <children>
+                                        <AnchorPane layoutX="4.0" layoutY="-42.0" prefHeight="606.6666666666666" prefWidth="215.0" styleClass="nav-head" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <children>
+                                                <Label alignment="CENTER" layoutY="25.0" prefHeight="23.0" prefWidth="200.0" styleClass="nav-head" stylesheets="@../../templateStyle.css" text="APP NAME" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                    <font>
+                                                        <Font name="Arial Bold" size="24.0" />
+                                                    </font>
+                                       <graphic>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="USERS" wrappingWidth="41.66668510437012" />
+                                       </graphic>
+                                                </Label>
+                                                <Button layoutX="22.333333333333332" layoutY="555.0" mnemonicParsing="false" onAction="#onLogoutClick" prefHeight="26.0" prefWidth="172.0" styleClass="logout-btn" stylesheets="@../../templateStyle.css" text="ออกจากระบบ" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                                    <graphic>
+                                                        <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="1.5em" styleClass="logout-icon" />
+                                                    </graphic>
+                                                </Button>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane layoutY="82.0" prefHeight="63.0" prefWidth="215.0" styleClass="nav-profile" stylesheets="@../../templateStyle.css">
+                                            <children>
+                                                <Label fx:id="currentNameLabel" layoutX="63.0" layoutY="13.0" prefHeight="23.0" prefWidth="143.0" text="name" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Bold" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label fx:id="currentRoleLabel" layoutX="63.0" layoutY="34.0" prefHeight="17.0" prefWidth="139.0" text="เจ้าหน้าที่สอบปากคำ" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                                <Button layoutY="2.0" mnemonicParsing="false" onAction="#onProfileButtonClick" prefHeight="57.0" prefWidth="215.0" styleClass="nav-head" stylesheets="@../../templateStyle.css" />
+                                                <ImageView fx:id="profileImageView" fitHeight="50.0" fitWidth="50.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" styleClass="nav-profile-image" />
+                                            </children>
+                                        </AnchorPane>
+                                        <VBox layoutY="151.0" prefHeight="309.0" prefWidth="215.0" AnchorPane.bottomAnchor="146.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="151.0">
+                                            <children>
+                                                <Button mnemonicParsing="false" onAction="#onBackToFollowUpButtonClick" prefHeight="35.0" prefWidth="215.0" styleClass="nav-btn" stylesheets="@../../templateStyle.css" text="รายการ">
+                                                    <graphic>
+                                                        <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="1.5em" styleClass="nav-icon" />
+                                                    </graphic>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#onRequestFormClick" prefHeight="35.0" prefWidth="215.0" styleClass="nav-btn" stylesheets="@../../templateStyle.css" text="สร้างคำร้อง">
+                                                    <graphic>
+                                                        <FontAwesomeIcon fill="WHITE" glyphName="PLUS" size="1.5em" styleClass="nav-icon" />
+                                                    </graphic>
+                                                </Button>
+                                                <AnchorPane prefHeight="26.0" prefWidth="215.0">
+                                                    <children>
+                                                        <Line endX="62.83332824707031" layoutX="123.0" layoutY="12.0" startX="-100.0" stroke="#595b5f" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" />
+                                                    </children>
+                                                </AnchorPane>
+                                                <Button mnemonicParsing="false" onAction="#onSettingsButtonClick" prefHeight="35.0" prefWidth="215.0" styleClass="nav-btn" stylesheets="@../../templateStyle.css" text="ตั้งค่า">
+                                                    <graphic>
+                                                        <FontAwesomeIcon fill="WHITE" glyphName="COG" size="1.5em" styleClass="nav-icon" />
+                                                    </graphic>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#onManualButtonClick" prefHeight="35.0" prefWidth="215.0" styleClass="nav-btn" stylesheets="@../../templateStyle.css" text="คู่มือการใช้งาน">
+                                                    <graphic>
+                                                        <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="1.5em" styleClass="nav-icon" text="" />
+                                                    </graphic>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#onCreatorButtonClick" prefHeight="35.0" prefWidth="215.0" styleClass="nav-btn" stylesheets="@../../templateStyle.css" text="ข้อมูลผู้พัฒนา">
+                                                    <graphic>
+                                                        <FontAwesomeIcon fill="WHITE" glyphName="INFO_CIRCLE" size="1.5em" styleClass="nav-icon" />
+                                                    </graphic>
+                                                </Button>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </left>
+               <center>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="885.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="884.6666666666666" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="606.6666666666666" prefWidth="884.6666666666666" styleClass="root" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label fx:id="requestNameLabel" layoutX="25.0" layoutY="18.0" styleClass="big-head-name" stylesheets="@../../templateStyle.css" text="สอบปากคำออนไลน์">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <ScrollPane layoutX="321.3333333333333" layoutY="60.0" prefHeight="380.0" prefWidth="768.0" styleClass="white-bg" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="60.0">
+                                       <content>
+                                          <VBox alignment="TOP_CENTER" prefHeight="2175.0" prefWidth="836.0" spacing="20.0" styleClass="blue-sky-panel" stylesheets="@../../templateStyle.css">
+                                             <children>
+                                                <HBox alignment="TOP_RIGHT" layoutX="11.0" layoutY="145.0" prefHeight="63.0" prefWidth="837.0" spacing="15.0">
+                                                   <children>
+                                                      <VBox alignment="TOP_RIGHT" prefHeight="179.0" prefWidth="762.0" spacing="5.0">
+                                                         <children>
+                                                            <Label style="-fx-font-weight: bold;" text="เจ้าหน้าที่สอบปากคำ" />
+                                                            <AnchorPane prefHeight="10000.0" prefWidth="641.0" styleClass="respond-chatBox" stylesheets="@../../templateStyle.css">
+                                                               <children>
+                                                                  <TextFlow prefHeight="162.0" prefWidth="662.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                                                     <children>
+                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                                                           <font>
+                                                                              <Font size="14.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                     </children>
+                                                                  </TextFlow>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                      <ImageView fitHeight="56.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../images/police-circle.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="90.0" right="15.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox layoutX="11.0" layoutY="25.0" prefHeight="167.0" prefWidth="837.0" spacing="15.0">
+                                                   <children>
+                                                      <ImageView fitHeight="56.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../images/user-circle.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <VBox prefHeight="179.0" prefWidth="697.0" spacing="5.0">
+                                                         <children>
+                                                            <Label style="-fx-font-weight: bold;" text="ตู้สอบปากคำ ๑" />
+                                                            <AnchorPane prefHeight="10000.0" prefWidth="641.0" styleClass="receive-chatBox" stylesheets="@../../templateStyle.css">
+                                                               <children>
+                                                                  <TextFlow layoutX="82.0" layoutY="-38.0" prefHeight="162.0" prefWidth="662.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                                                     <children>
+                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                                                           <font>
+                                                                              <Font size="14.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                     </children>
+                                                                  </TextFlow>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="15.0" right="90.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Label styleClass="chat-information-text" text="Police entered the chat" />
+                                             </children>
+                                             <padding>
+                                                <Insets top="15.0" />
+                                             </padding>
+                                          </VBox>
+                                       </content>
+                                    </ScrollPane>
+                                    <TextArea layoutX="20.0" layoutY="458.0" prefHeight="121.0" prefWidth="758.0" promptText="พิมพ์ที่นี่" scrollLeft="10.0" styleClass="text-area-chat" text="sdffffffffffffffff&#10;Sdfafasssdf&#10;sdasfs&#10;dfsadf&#10;asfd&#10;as&#10;fdas&#10;df&#10;df&#10;sfd&#10;a&#10;sd&#10;fas&#10;dfa&#10;sfd&#10;as" wrapText="true">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextArea>
+                                    <Button layoutX="807.6666666666666" layoutY="482.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="26.0" styleClass="transparent-btn" AnchorPane.rightAnchor="37.66666666666663">
+                                       <graphic>
+                                          <FontAwesomeIcon glyphName="MICROPHONE" size="3em" styleClass="close-icon" text="" />
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="1008.0" layoutY="548.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" style="-fx-font-weight: bold;" styleClass="mint-btn" stylesheets="@../../templateStyle.css" text="ส่งข้อความ" AnchorPane.rightAnchor="20.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="loadingPane" layoutX="20.0" layoutY="20.0" prefHeight="606.6666666666666" prefWidth="884.6666666666666" styleClass="overlay-bg" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ProgressIndicator fx:id="requestFormProgressIndicator" layoutX="345.0" layoutY="220.0" maxHeight="500.0" maxWidth="500.0" minHeight="0.0" minWidth="0.0" prefHeight="155.0" prefWidth="199.0" progress="0.0" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="220.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="requestFormPane" prefHeight="606.6666666666666" prefWidth="884.6666666666666" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

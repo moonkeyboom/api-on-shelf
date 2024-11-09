@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<HBox prefHeight="46.0" prefWidth="1051.0" spacing="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="56.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/bot-circle.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="179.0" prefWidth="697.0" spacing="5.0">
+         <children>
+            <Label style="-fx-font-weight: bold;" text="QA BOT" />
+            <AnchorPane prefHeight="10000.0" prefWidth="641.0" styleClass="receive-chatBox" stylesheets="@../../templateStyle.css">
+               <children>
+                  <TextFlow layoutX="82.0" layoutY="-38.0" prefHeight="162.0" prefWidth="662.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="15.0" right="90.0" />
+   </padding>
+</HBox>
