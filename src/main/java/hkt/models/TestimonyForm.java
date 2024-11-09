@@ -1,5 +1,6 @@
 package hkt.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import hkt.services.enums.FormStatus;
 
 import java.time.LocalDateTime;
@@ -17,6 +18,8 @@ public class TestimonyForm {
     private LocalDateTime createdAt;
     private LocalDateTime lastModified;
     private String policeNotes;  // บันทึกเพิ่มเติมจากตำรวจ
+
+    public TestimonyForm() {}
 
     public TestimonyForm(Session session) {
         this.formId = UUID.randomUUID().toString();
@@ -57,6 +60,7 @@ public class TestimonyForm {
         return basicInfo;
     }
 
+    @JsonIgnore
     public Session getSession() {
         return session;
     }
