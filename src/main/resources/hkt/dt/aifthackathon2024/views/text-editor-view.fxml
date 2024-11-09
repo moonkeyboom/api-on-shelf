@@ -87,7 +87,7 @@
                     <left>
                         <AnchorPane prefHeight="570.0" prefWidth="215.0" BorderPane.alignment="CENTER">
                             <children>
-                                <AnchorPane layoutY="-6.0" prefHeight="606.6666666666666" prefWidth="215.33333333333334" styleClass="nav-form" stylesheets="@../templateStyle.css">
+                                <AnchorPane layoutY="-6.0" prefHeight="606.6666666666666" prefWidth="215.33333333333334" styleClass="nav-testimonyForm" stylesheets="@../templateStyle.css">
                                     <children>
                                         <AnchorPane layoutX="4.0" layoutY="-42.0" prefHeight="606.6666666666666" prefWidth="215.0" styleClass="nav-head" stylesheets="@../templateStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                             <children>
