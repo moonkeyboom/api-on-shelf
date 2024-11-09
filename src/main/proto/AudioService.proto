@@ -1,0 +1,19 @@
+// src/main/proto/AudioService.proto
+
+syntax = "proto3";
+
+package grpc.partii;
+
+service AudioService {
+  rpc StreamAudio (AudioRequest) returns (AudioResponse);
+}
+
+message AudioRequest {
+  bytes audioData = 1;
+  string apiKey = 2;
+}
+
+message AudioResponse {
+  string message = 1;
+  string textTranscription = 2;
+}
