@@ -4,6 +4,7 @@ module hkt.dt.aifthackathon2024 {
     requires com.fasterxml.jackson.datatype.jsr310;
     requires com.fasterxml.jackson.databind;
     requires commons;
+    requires java.net.http;
 
     opens hkt.dt.aifthackathon2024 to javafx.fxml;
     exports hkt.dt.aifthackathon2024;
