@@ -24,7 +24,8 @@
 }
 
 .blue-sky-panel {
-    -fx-background-color: #97C0C9;
+    /*-fx-background-color: #97C0C9;*/
+    -fx-background-color: #92A1C0;
     -fx-background-radius: 8px;
     -fx-border-width: .5px;
     -fx-border-color: #D3D4D4;
@@ -121,7 +122,7 @@
 }
 
 .nav-btn:hover {
-    -fx-background-color: #AF6A49;
+    -fx-background-color: #4A6296;
     -fx-background-radius: 0px;
     -fx-text-fill:#fff;
     -fx-fill: #fff;
@@ -132,7 +133,7 @@
 }
 
 .nav-btn:pressed {
-    -fx-background-color: #965A3F;
+    -fx-background-color: #3D517C;
     -fx-text-fill: #fff;
 }
 
@@ -161,7 +162,7 @@
 }
 
 .sub-nav-btn:hover {
-    -fx-background-color: #AF6A49;
+    -fx-background-color: #4A6296;
     -fx-background-radius: 0px;
     -fx-text-fill:#fff;
     -fx-fill: #fff;
@@ -174,7 +175,7 @@
 }
 
 .sub-nav-btn:pressed {
-    -fx-background-color: #965A3F;
+    -fx-background-color: #3D517C;
     -fx-text-fill: #fff;
 }
 
@@ -183,12 +184,12 @@
 }
 
 .sub-nav-btn:selected {
-    -fx-background-color: #AF6A49;
+    -fx-background-color: #4A6296;
 }
 
 
 .nav-profile {
-    -fx-background-color: #C97954;
+    -fx-background-color: #4A6296;
     -fx-cursor:hand;
     -fx-font-family: "Arial";
     -fx-text-fill:#fff;
@@ -197,11 +198,12 @@
 
 }
 .nav-profile:hover {
-    -fx-background-color: #AF6A49;
+    /*-fx-background-color: #5B8396;*/
+    -fx-background-color: #3D517C;
 }
 
 .nav-profile:pressed {
-    -fx-background-color: #965A3F;
+    -fx-background-color: #314163;
 }
 
 .logout-area {
@@ -213,18 +215,18 @@
 
 .logout-btn{
     /*-fx-background-color: #C97954;*/
-    -fx-background-color: #C97954;
+    -fx-background-color: #4A6296;
     -fx-background-radius: 30px;
     -fx-cursor: hand;
     -fx-text-fill: #fff;
 }
 
 .logout-btn:hover{
-    -fx-background-color: #AF6A49;
+    -fx-background-color: #3D517C;
 }
 
 .logout-btn:pressed {
-    -fx-background-color: #965A3F;
+    -fx-background-color: #314163;
 }
 
 .logout-icon {
@@ -315,6 +317,25 @@
 
 /* Pressed effect for Green Positive Button */
 .green-positive-btn:pressed {
+    -fx-background-color: #3DB58F;   /* Even darker green when pressed */
+}
+
+/*lighter-mint*/
+.green-positive-less-round-btn {
+    -fx-background-color: #46CFA3;   /* Green background */
+    -fx-text-fill: #FFFFFF;          /* White text */
+    -fx-background-radius: 8px;     /* Rounded corners */
+    -fx-cursor: hand;                /* Hand cursor on hover */
+
+}
+
+/* Hover effect for Green Positive Button */
+.green-positive-less-round-btn:hover {
+    -fx-background-color: #46CFA3;   /* Darker green on hover */
+}
+
+/* Pressed effect for Green Positive Button */
+.green-positive-less-round-btn:pressed {
     -fx-background-color: #3DB58F;   /* Even darker green when pressed */
 }
 

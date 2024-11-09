@@ -108,12 +108,12 @@
                            <children>
                               <AnchorPane prefHeight="606.6666666666666" prefWidth="884.6666666666666" styleClass="root" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label fx:id="requestNameLabel" layoutX="25.0" layoutY="18.0" styleClass="big-head-name" stylesheets="@../../templateStyle.css" text="สอบปากคำออนไลน์">
+                                    <Label fx:id="requestNameLabel" layoutX="25.0" layoutY="58.0" styleClass="big-head-name" stylesheets="@../../templateStyle.css" text="สอบปากคำออนไลน์">
                                        <font>
                                           <Font size="20.0" />
                                        </font>
                                     </Label>
-                                    <ScrollPane layoutX="321.3333333333333" layoutY="60.0" prefHeight="380.0" prefWidth="768.0" styleClass="white-bg" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="60.0">
+                                    <ScrollPane layoutX="17.333333333333332" layoutY="85.66666666666667" prefHeight="380.0" prefWidth="768.0" styleClass="white-bg" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="143.66666666666657" AnchorPane.leftAnchor="17.333333333333332" AnchorPane.rightAnchor="11.333333333333371" AnchorPane.topAnchor="85.66666666666667">
                                        <content>
                                           <VBox alignment="TOP_CENTER" prefHeight="2175.0" prefWidth="836.0" spacing="20.0" styleClass="blue-sky-panel" stylesheets="@../../templateStyle.css">
                                              <children>
@@ -185,17 +185,37 @@
                                           </VBox>
                                        </content>
                                     </ScrollPane>
-                                    <TextArea layoutX="20.0" layoutY="458.0" prefHeight="121.0" prefWidth="758.0" promptText="พิมพ์ที่นี่" scrollLeft="10.0" styleClass="text-area-chat" text="sdffffffffffffffff&#10;Sdfafasssdf&#10;sdasfs&#10;dfsadf&#10;asfd&#10;as&#10;fdas&#10;df&#10;df&#10;sfd&#10;a&#10;sd&#10;fas&#10;dfa&#10;sfd&#10;as" wrapText="true">
+                                    <TextArea layoutX="20.0" layoutY="464.0" prefHeight="121.0" prefWidth="758.0" promptText="พิมพ์ที่นี่" scrollLeft="10.0" styleClass="text-area-chat" text="sdffffffffffffffff&#10;Sdfafasssdf&#10;sdasfs&#10;dfsadf&#10;asfd&#10;as&#10;fdas&#10;df&#10;df&#10;sfd&#10;a&#10;sd&#10;fas&#10;dfa&#10;sfd&#10;as" wrapText="true">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextArea>
-                                    <Button layoutX="807.6666666666666" layoutY="482.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="26.0" styleClass="transparent-btn" AnchorPane.rightAnchor="37.66666666666663">
+                                    <HBox alignment="CENTER_LEFT" layoutX="19.0" layoutY="8.0" prefHeight="34.0" prefWidth="854.0" spacing="20.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="green-positive-less-round-btn" text="ขั้นตอนที่ ๑" />
+                                          <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" size="2.5em" styleClass="close-icon" />
+                                          <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๒" />
+                                          <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" layoutX="125.0" layoutY="38.0" size="2.5em" styleClass="close-icon" />
+                                          <Button layoutX="163.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๓" />
+                                          <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" layoutX="278.0" layoutY="38.0" size="2.5em" styleClass="close-icon" />
+                                          <Button layoutX="315.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๔" />
+                                          <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" layoutX="431.0" layoutY="38.0" size="2.5em" styleClass="close-icon" />
+                                          <Button layoutX="468.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๕" />
+                                          <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" layoutX="583.0" layoutY="38.0" size="2.5em" styleClass="close-icon" />
+                                          <Button layoutX="621.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๖" />
+                                       </children>
+                                    </HBox>
+                                    <VBox alignment="CENTER" layoutX="786.0" layoutY="519.0" prefHeight="58.0" prefWidth="77.0" spacing="8.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#onSubmitButtonClick" style="-fx-font-weight: bold;" styleClass="mint-btn" stylesheets="@../../templateStyle.css" text="ส่งข้อความ" />
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" style="-fx-font-weight: bold;" styleClass="green-positive-btn" text="ถัดไป" />
+                                       </children>
+                                    </VBox>
+                                    <Button layoutX="805.0" layoutY="471.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" styleClass="transparent-btn">
                                        <graphic>
                                           <FontAwesomeIcon glyphName="MICROPHONE" size="3em" styleClass="close-icon" text="" />
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="1008.0" layoutY="548.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" style="-fx-font-weight: bold;" styleClass="mint-btn" stylesheets="@../../templateStyle.css" text="ส่งข้อความ" AnchorPane.rightAnchor="20.0" />
                                  </children>
                               </AnchorPane>
                            </children>
@@ -205,7 +225,36 @@
                               <ProgressIndicator fx:id="requestFormProgressIndicator" layoutX="345.0" layoutY="220.0" maxHeight="500.0" maxWidth="500.0" minHeight="0.0" minWidth="0.0" prefHeight="155.0" prefWidth="199.0" progress="0.0" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="220.0" />
                            </children>
                         </AnchorPane>
-                        <AnchorPane fx:id="requestFormPane" prefHeight="606.6666666666666" prefWidth="884.6666666666666" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <AnchorPane fx:id="requestFormPane" prefHeight="606.6666666666666" prefWidth="884.6666666666666" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="600.6666666666666" prefWidth="884.6666666666666" styleClass="overlay-bg" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="342.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" styleClass="panel" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="100.0">
+                                       <children>
+                                          <Label layoutX="36.0" layoutY="28.0" style="-fx-font-weight: bold;" styleClass="big-head-name" text="ขั้นตอนที่ ๑">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <TextFlow layoutX="38.0" layoutY="57.0" prefHeight="314.0" prefWidth="414.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="กรอกประวัติส่วนตัวของท่าน">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </TextFlow>
+                                          <Button layoutX="440.0" layoutY="15.0" mnemonicParsing="false" styleClass="transparent-btn">
+                                             <graphic>
+                                                <FontAwesomeIcon glyphName="CLOSE" styleClass="close-icon" />
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
                      </children>
                   </AnchorPane>
                </center>

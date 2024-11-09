@@ -29,11 +29,11 @@
                            <children>
                               <AnchorPane prefHeight="606.6666666666666" prefWidth="884.6666666666666" styleClass="root" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <ScrollPane layoutX="321.3333333333333" layoutY="60.0" prefHeight="380.0" prefWidth="768.0" styleClass="white-bg" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="60.0">
+                                    <ScrollPane layoutX="17.333333333333332" layoutY="107.66666666666667" prefHeight="380.0" prefWidth="768.0" styleClass="white-bg" stylesheets="@../../templateStyle.css" AnchorPane.bottomAnchor="129.0" AnchorPane.leftAnchor="17.333333333333332" AnchorPane.rightAnchor="11.333333333333258" AnchorPane.topAnchor="107.66666666666667">
                                        <content>
                                           <VBox alignment="TOP_CENTER" prefHeight="2175.0" prefWidth="1052.0" spacing="20.0" styleClass="blue-sky-panel" stylesheets="@../../templateStyle.css">
                                              <children>
-                                                <HBox layoutX="11.0" layoutY="25.0" prefHeight="167.0" prefWidth="837.0" spacing="15.0">
+                                                <HBox layoutX="11.0" layoutY="25.0" prefHeight="39.0" prefWidth="1051.0" spacing="15.0">
                                                    <children>
                                                       <ImageView fitHeight="56.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
@@ -101,17 +101,17 @@
                                           </VBox>
                                        </content>
                                     </ScrollPane>
-                                    <TextArea layoutX="20.0" layoutY="458.0" prefHeight="121.0" prefWidth="978.0" promptText="พิมพ์ที่นี่" scrollLeft="10.0" styleClass="text-area-chat" text="sdffffffffffffffff&#10;Sdfafasssdf&#10;sdasfs&#10;dfsadf&#10;asfd&#10;as&#10;fdas&#10;df&#10;df&#10;sfd&#10;a&#10;sd&#10;fas&#10;dfa&#10;sfd&#10;as" wrapText="true">
+                                    <TextArea layoutX="20.0" layoutY="472.0" prefHeight="121.0" prefWidth="978.0" promptText="พิมพ์ที่นี่" scrollLeft="10.0" styleClass="text-area-chat" text="sdffffffffffffffff&#10;Sdfafasssdf&#10;sdasfs&#10;dfsadf&#10;asfd&#10;as&#10;fdas&#10;df&#10;df&#10;sfd&#10;a&#10;sd&#10;fas&#10;dfa&#10;sfd&#10;as" wrapText="true">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </TextArea>
-                                    <Button layoutX="1022.6666666666666" layoutY="487.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="26.0" styleClass="transparent-btn" AnchorPane.rightAnchor="38.0">
+                                    <Button layoutX="1022.6666666666666" layoutY="498.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="26.0" styleClass="transparent-btn" AnchorPane.rightAnchor="38.0">
                                        <graphic>
                                           <FontAwesomeIcon glyphName="MICROPHONE" size="3em" styleClass="close-icon" text="" />
                                        </graphic>
                                     </Button>
-                                    <Button layoutX="1008.0" layoutY="548.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" style="-fx-font-weight: bold;" styleClass="mint-btn" stylesheets="@../../templateStyle.css" text="ส่งข้อความ" AnchorPane.rightAnchor="20.0" />
+                                    <Button layoutX="1006.6666666666666" layoutY="559.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" style="-fx-font-weight: bold;" styleClass="mint-btn" stylesheets="@../../templateStyle.css" text="ส่งข้อความ" AnchorPane.rightAnchor="20.0" />
                                     <AnchorPane layoutX="453.0" layoutY="-67.0" prefHeight="47.0" prefWidth="1100.0" styleClass="head-bar-mint" AnchorPane.bottomAnchor="553.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
                                           <Label fx:id="requestNameLabel" layoutX="476.0" layoutY="11.0" stylesheets="@../../templateStyle.css" text="สอบปากคำออนไลน์" textFill="WHITE">
@@ -123,6 +123,21 @@
                                     </AnchorPane>
                                  </children>
                               </AnchorPane>
+                              <HBox alignment="CENTER_LEFT" layoutX="21.0" layoutY="60.0" prefHeight="34.0" prefWidth="854.0" spacing="20.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="green-positive-less-round-btn" text="ขั้นตอนที่ ๑" />
+                                    <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" size="2.5em" styleClass="close-icon" />
+                                    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๒" />
+                                    <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" layoutX="125.0" layoutY="38.0" size="2.5em" styleClass="close-icon" />
+                                    <Button layoutX="163.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๓" />
+                                    <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" layoutX="278.0" layoutY="38.0" size="2.5em" styleClass="close-icon" />
+                                    <Button layoutX="315.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๔" />
+                                    <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" layoutX="431.0" layoutY="38.0" size="2.5em" styleClass="close-icon" />
+                                    <Button layoutX="468.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๕" />
+                                    <FontAwesomeIcon glyphName="ANGLE_DOUBLE_RIGHT" layoutX="583.0" layoutY="38.0" size="2.5em" styleClass="close-icon" />
+                                    <Button layoutX="621.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-font-weight: bold;" styleClass="gray-btn" text="ขั้นตอนที่ ๖" />
+                                 </children>
+                              </HBox>
                            </children>
                         </AnchorPane>
                         <AnchorPane fx:id="loadingPane" layoutX="20.0" layoutY="20.0" prefHeight="606.6666666666666" prefWidth="884.6666666666666" styleClass="overlay-bg" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
